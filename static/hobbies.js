@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".text").each(function(p) {
+    $("span").each(function(p) {
 
         $( this ).mouseenter(function(){
             $( this ).css({"font-weight": "900", "text-decoration": "underline"})
