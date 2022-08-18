@@ -6,7 +6,7 @@ $(document).ready(function(){
   function(){
     $("#discordtag").hide();
     $("#discordtagclick").hide();
-  }),
+  });
   $("#dicrordicon").click(function(){
     var $temp = $("<input>");
     $("body").append($temp);
@@ -14,7 +14,7 @@ $(document).ready(function(){
     document.execCommand("copy");
     $temp.remove();
     $("#discordcopied").show().delay(1250).fadeOut();
-  }),
+  });
   $("#tgicon").hover(function(){
     $("#tgtag").show();
     $("#tgtagclick").show();
@@ -30,5 +30,21 @@ $(document).ready(function(){
     document.execCommand("copy");
     $temp.remove();
     $("#tgcopied").show().delay(1250).fadeOut();
+  });
+  $("#gmailicon").hover(function(){
+    $("#gmailtag").show();
+    $("#gmailtagclick").show();
+  },
+  function(){
+    $("#gmailtag").hide();
+    $("#gmailtagclick").hide();
+  }),
+  $("#gmailicon").click(function(){
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#gmailtag").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    $("#gmailcopied").show().delay(1250).fadeOut();
   });
 });
