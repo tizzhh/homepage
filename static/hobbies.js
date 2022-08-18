@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("span").each(function(p) {
+    $("span").each(function() {
 
         $(this).mouseenter(function() {
             $(this).css({
