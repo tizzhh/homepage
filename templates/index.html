@@ -1,133 +1,150 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <link rel="icon" href="../static/1.jpg" type="image/icon">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <link href="../static/styles.css" rel="stylesheet">
-        <title>tizzhh</title>
-        <script src="../static/jquery-3.6.0.min.js"></script>
-    </head>
-    <body>
-        <audio id="frogaudio" src="../static/frog.mp3" style="display: none"></audio>
-        <video autoplay loop muted> 
-            <source src="../static/back1.mp4" type="video/mp4">
-        </video>
-        <div id="indexsec" class="coding_flexbox">
-            <img id="frogpic" src="../static/frog.svg" alt="Frog" style="margin-left: -330px; margin-top: -20px">     
-            <ul style="text-align: center; z-index: 1000">
-                <li>
-                    <h2>Hello, world</h2>
-                </li>
-                <li>
-                    <a id="about" href="#" onclick="return false">About</a>
-                </li>
-                <li>
-                    <a id="coding" href="#" onclick="return false">Coding journey</a>
-                </li>
-                <li>
-                    <a id="socials" href="#" onclick="return false">Socials</a>
-                </li>
-                <li>
-                    <a id="projects" href="#" onclick="return false">Projects</a>
-                </li>
-            </ul>
-        </div>
-        <div id="aboutsec" class="coding_flexbox" style="display: none">
-            <table class="table table-borderless", style="width: 450px">
-                <thead>
-                    <tr>
-                        <td><a id="backtoindex" href="#" onclick="return false">↵ Back</a></td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <p class="text">Hello, tizzhh here. I'm a 20 yo university student in business major from Moscow. My hobbies are: 
-                                <span id="frog">frogs</span>, <span id="anime">anime</span>, <span id="code">coding</span> & <span id="skate">skateboarding</span></p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <img id="froggif" src="../static/frog.gif" style = "display: none" alt="frog">
-            <img id="animegif" class="gifs" src="../static/anime.gif" style = "display: none" alt="anime">
-            <img id="codegif" class="gifs" src="../static/code2.gif" style = "display: none" alt="coding">
-            <img id="skategif" class="gifs" src="../static/skate.gif" style = "display: none" alt="skateboarding">
-        </div>
-        <div id="codingsec" class="coding_flexbox" style="display: none">
-            <table class="table table-borderless">
-                <thead>
-                    <tr>
-                        <td><a id="backtoindex1" href="#" onclick="return false">↵ Back</a></td>
-                    </tr>
-                    <tr>
-                        <th><p class="text">Start and end date</p></th>
-                        <th><p class="text">Course</p></th>
-                        <th><p class="text">What I've learnt</p></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><p class="text">13/07/2022; 06/08/2022</p></td>
-                        <td>
-                            <p class="text">CS50x<p></p>
-                        </td>
-                        <td>
-                            <p class="text">C : arrays, sorts, memory, data structs; Python; SQL; HTML; CSS; JS; Flask.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><p class="text">07/08/2022; 16/08/2022</p></td>
-                        <td>
-                            <p class="text">CS50P<p></p>
-                        </td>
-                        <td>
-                            <p class="text">Python more in depth</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p class="coding_flexbox" id="tgcopied" style="margin-top:-100px; position: absolute; font-size: x-large; display: none;">Telegram @ copied</p>
-        <p class="coding_flexbox" id="discordcopied" style="margin-top:-150px; position: absolute; font-size: x-large; display: none;">Discord tag copied</p>
-        <p class="coding_flexbox" id="gmailcopied" style="margin-top:-200px; position: absolute; font-size: x-large; display: none;">Gmail copied</p>
-        <div id="socialssec" class="coding_flexbox" style="display: none">
-            <li style="margin-bottom: 80px; list-style: none; position: absolute; z-index: 11;">
-                <a id="backtoindex2" href="#" onclick="return false">↵ Back</a>
+
+<head>
+    <link rel="icon" href="../static/1.jpg" type="image/icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="../static/styles.css" rel="stylesheet">
+    <title>tizzhh</title>
+    <script src="../static/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <audio id="frogaudio" src="../static/frog.mp3" style="display: none"></audio>
+    <video autoplay loop muted>
+        <source src="../static/back1.mp4" type="video/mp4">
+    </video>
+    <div id="indexsec" class="coding_flexbox">
+        <img id="frogpic" src="../static/frog.svg" alt="Frog" style="margin-left: -330px; margin-top: -20px">
+        <ul style="text-align: center; z-index: 1000">
+            <li>
+                <h2>Hello, world</h2>
             </li>
-            <ul class="nav" style="height: 64px; width: 356px">
-                <li class="nav-item" style="width: 64px">
-                    <a class="nav-link" href="https://github.com/tizzhh" target="_blank"><img src="../static/git.png" alt="github"></a>
-                <li class="nav-item" style="width: 86px; padding-left: 10px">
-                    <a id="gmailicon" class="nav-link" href="#" onclick="return false;"><img src="../static/gmail.png" alt="gmail"></a>
-                    <p id="gmailtag" style="width:112px; margin-top: 55px; margin-left: -40px; display: none;">darovadraste@gmail.com</p>
-                    <p id="gmailtagclick" style="width:150px; margin-left: -3px; margin-top: -15px; font-size: small; display: none;">Click on icon to copy!</p>
-                </li>
-                <li class="nav-item" style="width: 64px; padding-left: 20px">
-                    <a id="dicrordicon" href="#" class="nav-link" onclick="return false;"><img src="../static/d.png" alt="discord"></a>
-                    <p id="discordtag" style="width:112px; padding-left: 15px; margin-top: 55px; display: none;">蛙𓆏#2439</p>
-                    <p id="discordtagclick" style="width:150px; margin-left: -5px; margin-top: -15px; font-size: small; display: none;">Click on icon to copy!</p>
-                </li>
-                <li class="nav-item" style="width: 64px; padding-left: 30px">
-                    <a id="tgicon" target="_blank" href="#" class="nav-link" onclick="return false;"><img src="../static/tg.png" alt="discord"></a>
-                    <p id="tgtag" style="margin-left: -45px; margin-top: 55px; display: none">@TeaWithMilkAndSugar</p>
-                    <p id="tgtagclick" style="width:150px; margin-left: -5px; margin-top: -15px; font-size: small; display: none;">Click on icon to copy!</p>
-                </li>
-              </ul>
-        </div>
-        <div id="projectssec" class="coding_flexbox" style="display: none">
-            <li style="margin-bottom: 80px; list-style: none; position: absolute; z-index: 11;">
-                <a id="backtoindex3" href="#" onclick="return false">↵ Back</a>
+            <li>
+                <a id="about" href="#" onclick="return false">About</a>
             </li>
-            TODO
-        </div>
-        <div id="div2" style="z-index: 0">
-            <p>Art by: waneella, Joanna Ngai, Daniel Olah</p>
-        </div>
-        <script name="frog ribbit" src="../static/ribbit.js"></script>
-        <script name="hide-show sections" src="../static/hide_show.js"></script>
-        <script name="hobbies" src="../static/hobbies.js"></script>
-        <script name="socials" src="../static/socials.js"></script>
-    </body>
+            <li>
+                <a id="coding" href="#" onclick="return false">Coding journey</a>
+            </li>
+            <li>
+                <a id="socials" href="#" onclick="return false">Socials</a>
+            </li>
+            <li>
+                <a id="projects" href="#" onclick="return false">Projects</a>
+            </li>
+        </ul>
+    </div>
+    <div id="aboutsec" class="coding_flexbox" style="display: none">
+        <table class="table table-borderless" , style="width: 450px">
+            <thead>
+                <tr>
+                    <td><a id="backtoindex" href="#" onclick="return false">↵ Back</a></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="text">Hello, tizzhh here. I'm a 20 yo university student in business major from Moscow. My hobbies are:
+                            <span id="frog">frogs</span>, <span id="anime">anime</span>, <span id="code">coding</span> & <span id="skate">skateboarding</span>. Be sure to hover
+                            on each hobby name & click on a frog in the main menu!
+                        </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <img id="froggif" src="../static/frog.gif" style="display: none" alt="frog">
+        <img id="animegif" class="gifs" src="../static/anime.gif" style="display: none" alt="anime">
+        <img id="codegif" class="gifs" src="../static/code2.gif" style="display: none" alt="coding">
+        <img id="skategif" class="gifs" src="../static/skate.gif" style="display: none" alt="skateboarding">
+    </div>
+    <div id="codingsec" class="coding_flexbox" style="display: none">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <td><a id="backtoindex1" href="#" onclick="return false">↵ Back</a></td>
+                </tr>
+                <tr>
+                    <th>
+                        <p class="text">Start and end date</p>
+                    </th>
+                    <th>
+                        <p class="text">Course</p>
+                    </th>
+                    <th>
+                        <p class="text">What I've learnt</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p class="text">13/07/2022; 06/08/2022</p>
+                    </td>
+                    <td>
+                        <p class="text">CS50x
+                        <p></p>
+                    </td>
+                    <td>
+                        <p class="text">C : arrays, sorts, memory, data structs; Python; SQL; HTML; CSS; JS; Flask.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="text">07/08/2022; 16/08/2022</p>
+                    </td>
+                    <td>
+                        <p class="text">CS50P
+                        <p></p>
+                    </td>
+                    <td>
+                        <p class="text">Python more in depth</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="coding_flexbox" id="tgcopied" style="margin-top:-100px; position: absolute; font-size: x-large; display: none;">Telegram @ copied</p>
+    <p class="coding_flexbox" id="discordcopied" style="margin-top:-150px; position: absolute; font-size: x-large; display: none;">Discord tag copied</p>
+    <p class="coding_flexbox" id="gmailcopied" style="margin-top:-200px; position: absolute; font-size: x-large; display: none;">Gmail copied</p>
+    <div id="socialssec" class="coding_flexbox" style="display: none">
+        <li style="margin-bottom: 80px; list-style: none; position: absolute; z-index: 11;">
+            <a id="backtoindex2" href="#" onclick="return false">↵ Back</a>
+        </li>
+        <ul class="nav" style="height: 64px; width: 356px">
+            <li class="nav-item" style="width: 64px">
+                <a class="nav-link" href="https://github.com/tizzhh" target="_blank"><img src="../static/git.png" alt="github"></a>
+            <li class="nav-item" style="width: 86px; padding-left: 10px">
+                <a id="gmailicon" class="nav-link" href="#" onclick="return false;"><img src="../static/gmail.png" alt="gmail"></a>
+                <p id="gmailtag" style="width:112px; margin-top: 55px; margin-left: -40px; display: none;">darovadraste@gmail.com</p>
+                <p id="gmailtagclick" style="width:150px; margin-left: -3px; margin-top: -15px; font-size: small; display: none;">Click on icon to copy!</p>
+            </li>
+            <li class="nav-item" style="width: 64px; padding-left: 20px">
+                <a id="dicrordicon" href="#" class="nav-link" onclick="return false;"><img src="../static/d.png" alt="discord"></a>
+                <p id="discordtag" style="width:112px; padding-left: 15px; margin-top: 55px; display: none;">蛙𓆏#2439</p>
+                <p id="discordtagclick" style="width:150px; margin-left: -5px; margin-top: -15px; font-size: small; display: none;">Click on icon to copy!</p>
+            </li>
+            <li class="nav-item" style="width: 64px; padding-left: 30px">
+                <a id="tgicon" target="_blank" href="#" class="nav-link" onclick="return false;"><img src="../static/tg.png" alt="discord"></a>
+                <p id="tgtag" style="margin-left: -45px; margin-top: 55px; display: none">@TeaWithMilkAndSugar</p>
+                <p id="tgtagclick" style="width:150px; margin-left: -5px; margin-top: -15px; font-size: small; display: none;">Click on icon to copy!</p>
+            </li>
+        </ul>
+    </div>
+    <div id="projectssec" class="coding_flexbox" style="display: none">
+        <li style="margin-bottom: 80px; list-style: none; position: absolute; z-index: 11;">
+            <a id="backtoindex3" href="#" onclick="return false">↵ Back</a>
+        </li>
+        TODO
+    </div>
+    <div id="div2" style="z-index: 0">
+        <p>Art by: waneella, Joanna Ngai, Daniel Olah</p>
+    </div>
+    <script name="frog ribbit" src="../static/ribbit.js"></script>
+    <script name="hide-show sections" src="../static/hide_show.js"></script>
+    <script name="hobbies" src="../static/hobbies.js"></script>
+    <script name="socials" src="../static/socials.js"></script>
+</body>
+
 </html>
