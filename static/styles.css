@@ -94,9 +94,10 @@ body {
 .scroll{
     padding:10px;
     width: 90%;
-    height: 90%;
+    height: 85%;
     overflow: auto;
     text-align:justify; 
+    backdrop-filter: blur(0px);
 }
 
 .scroll::-webkit-scrollbar {
@@ -113,6 +114,10 @@ body {
 
 .scroll:hover::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.7); 
+}
+
+.scroll:hover {
+    backdrop-filter: blur(2px);
 }
 
 .project_link{
