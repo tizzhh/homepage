@@ -6,3 +6,4 @@
 - About section 
 - Socials section
 - Section with my coding history
+- My projects
