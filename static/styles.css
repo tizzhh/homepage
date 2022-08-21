@@ -58,19 +58,37 @@ body {
     justify-content: end;
 }
 
-#froggif {
-    width: 350px;
-    height: auto;
-    margin-left: 820px;
-    border-radius: 10px;
+@media (min-width: 1500px) {
+    #froggif {
+        width: 350px;
+        height: auto;
+        margin-left: 820px;
+        border-radius: 10px;
+    }
+
+    .gifs {
+        width: 500px;
+        height: auto;
+        margin-left: 970px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+    }
 }
 
-.gifs {
-    width: 500px;
-    height: auto;
-    margin-left: 970px;
-    margin-bottom: 40px;
-    border-radius: 10px;
+@media (max-width: 1499px) {
+    #froggif {
+        width: 350px;
+        height: auto;
+        margin-top: 740px;
+        border-radius: 10px;
+    }
+
+    .gifs {
+        width: 350px;
+        height: auto;
+        margin-top: 740px;
+        border-radius: 10px;
+    }
 }
 
 .coding_flexbox {
